@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #212121;
+    color: white;
+}
+.tops-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+@media (max-width: 500px){
+.tops-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2px;
+    align-items: center;
+}
+}
+.navegation{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+    text-decoration: none;
+}
+.link{
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+}
+
+
+.box{
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #4d4d4d;
+    position: relative
+}
+.box .switch{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: black;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+    cursor: pointer;
+}
+.box .switchOn{
+    left: 70px;
+    background-color: white;
+}
+
+.light{
+    color: white;
+}
+.Ligth{
+    background-color: white;
+    color: black;
+}
+.black{
+    color: black;
+}
+
+/* Add or remove box */
+
+.menu {
+    position: relative; 
+    display: inline-block;/* Para que a box-select apareça em relação ao menu */
+    align-items: center;
+}
+
+.box-select {
+    display: none;
+    position: absolute;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px #4d4d4d;
+    padding: 12px 16px;
+    height: 370px;
+    z-index: 1;
+    color: white;
+    backdrop-filter: blur(10px);
+}
+.menu:hover .box-select {
+    display: block; /* Exibe a box-select quando o mouse está sobre a menu */
+    line-height: 35px;
+}
+.darkBox{
+    color: white !important;
+    text-decoration: none;
+   padding: 5px;
+    border: 1px solid #4d4d4d;
+}
+ /* The end */
+
+/* Create main and class create-father */
+
+.creat{
+    display: inline;
+    border: 1px solid black;
+    padding: 5px;
+}
+.openAi{
+    display: none;
+}
+.creat:hover .openAi{
+    display: block;
+} 
+
+/*  The end */
+
+
+.create-father{
+    color: white;
+    width: 100%;
+}
+.infoTxt{
+    width: 100%;
+    height: 600px;
+    background-image: url('img/coding-924920_1920.jpg');
+    padding: 2px;
+    background-attachment: fixed;
+}
+@media (min-width: 500px){
+
+
+.infoCreate{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.527);
+    backdrop-filter: blur(5px);
+    box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.178);
+    height: 440px;
+    color: black;
+}
+}
+
+@media(max-width: 500px){
+    .infoCreate{
+        width: 100%;
+        margin: 0 auto;
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.527);
+        backdrop-filter: blur(5px);
+        box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.178);
+        height: 440px;
+        color: black;
+}
+}
+.subtitulo{
+    text-align: center;
+}
+
+.ferramentas{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 250px;
+}
+
+/* The end */
+
+.infoJornal{
+    max-width: 1024px;
+    margin: 0 auto;
+    backdrop-filter: blur(4px);
+    height: 500px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    box-shadow: 1px 1px 5px 1px white;
+    font-family: sans-serif;
+}
+
+.jornalInfo{
+    padding: 25px;
+    background-image: url('img/light-bulbs-5488573_1920.jpg');
+    height: 600px;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+@media (max-width: 500px){
+    .infoJornal{
+        width: 100%;
+        margin: 0 auto;
+        backdrop-filter: blur(4px);
+        height: 500px;
+        text-align: justify;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        box-shadow: 1px 1px 5px 1px white;
+        font-family: sans-serif;
+    }
+    
+    .jornalInfo{
+        width: 100%;
+        padding: 15px;
+        background-image: url('img/light-bulbs-5488573_1920.jpg');
+        height: 815px;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 25px;
+}
+
+/* The end */
+
+.selecione{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 18px;
+    gap: 25px;
+}
+.card{
+    max-width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 8px; 
+    font-family: sans-serif;
+}
+.imgs{
+    width: 100%;
+    height: 180px;
+    border-radius: 15px;
+    padding-bottom: 5px;
+}
+.card:hover{
+    background-color: rgba(255, 255, 255, 0.363);
+    transition: .5s;
+}
+
+.centrali{
+    max-width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+    font-family: sans-serif;
+}
+#indisponivel:hover{
+    background-color: white;
+    color: black !important;
+}
+
+/* Brincadeira */
+.relacao{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 800px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.mensagems{
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    backdrop-filter: blur(10px);
+    z-index: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sim:hover{
+    background-color: white; 
+    color: black !important;
+}
+
+.remove{
+    display: none;
+}
